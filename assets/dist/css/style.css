@@ -1,0 +1,80 @@
+
+.container{
+    border-radius: 1px solid black;
+    padding: 10px;
+    width: auto;
+    height: 20px;
+    
+}
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+.a {
+    text-decoration: underline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.nav-link.active {
+    color: white !important;
+    border-radius: 0.375rem;
+}
+.nav a:hover {
+    background-color: black;
+}
+footer {
+    background-color: #777;
+    padding: 1px;
+    text-align: center;
+    color: white;
+}
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 380px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .flip-card-back {
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    padding: 1rem;
+    text-align: center;
+  }
+  .b {
+    background-color: blue;
+    border-collapse: collapse;
+    border: 1px solid black;
+    
+  }

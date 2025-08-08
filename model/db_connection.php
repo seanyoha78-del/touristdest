@@ -1,0 +1,4 @@
+<?php
+	$conn = mysqli_connect('localhost','root','','tourism') or die('Cannot connect to the database!');
+	date_default_timezone_set('Asia/Manila');
+?>

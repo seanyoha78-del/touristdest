@@ -1,0 +1,142 @@
+    <?php include '../nav/header.php';?>
+
+    <link rel="stylesheet" href="../assets/dist/css/style.css">
+        <br><br>
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+                
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="<?= $carousel[0][4] ?>" alt="" height="600px" class="d-block" style="width:100%">
+                        <div class="carousel-caption" style="color: white;">
+                            <h1><b><?= $carousel[0][1] ?></b></h1>
+                            <p><?= $carousel[0][2] ?></p>
+                            <p><a class="btn btn-lg btn-primary" 
+                                href="<?= $carousel[0][6] ?>" target="_blank">click for more!</a>
+                        </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?= $carousel[1][4] ?>" alt="" height="600px" class="d-block" style="width:100%" >
+                        <div class="carousel-caption" style="color: white;">
+                                <h1><b><?= $carousel[1][1] ?></b></h1>
+                            <p><?= $carousel[1][2] ?></p>
+                            <p>
+                                <a class="btn btn-lg btn-primary" 
+                                href="<?= $carousel[1][6] ?>">Click for more!</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?= $carousel[2][4] ?>" alt="" height="600px" class="d-block" style="width:100%">
+                        <div class="carousel-caption" style="color: white;">
+                                <h1><b><?= $carousel[2][1] ?></b></h1>
+                            <p><?= $carousel[2][2] ?> </p>
+                            <p>
+                                <a class="btn btn-lg btn-primary" href="<?= $carousel[2][6] ?>">Click for more!</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div><br><br><br>
+            <!--hero destination-->
+            <div class="container">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                    <center><h2 class="a"><b><i><?= $hero[0][1] ?></i></b></h2><br><br>
+                            <p><?= $hero[0][2] ?></p>
+                    </div></center>
+                    <div class="col-md-5">
+                        <img src="<?= $hero[0][3] ?>" class="img-fluid rounded shadow-lg hover-zoom" style="width: 500px; height: 300px; object-fit: cover; transition: transform 0.3s ease;" alt="cinema">
+                    </div>
+                </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-5 order-md-1">
+                    <img src="<?= $hero[1][3] ?>" class="img-fluid rounded shadow-lg hover-zoom" style="width: 500px; height: 300px; object-fit: cover; transition: transform 0.3s ease;" alt="travel">
+                </div>
+                <div class="col-md-7 order-md-2">
+                    <center><h2 class="a"><b><i><?= $hero[1][1] ?></i></b></h2><br><br>
+                    <p><?= $hero[1][2] ?></p>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <center><h2 class="a"><b><i><?= $hero[2][1] ?></i></b></h2><br><br>
+                    <p><?= $hero[2][2] ?></p>
+                    </div></center>
+                <div class="col-md-5">
+                    <img src="<?= $hero[2][3] ?>" class="img-fluid rounded shadow-lg hover-zoom" style="width: 500px; height: 300px; object-fit: cover; transition: transform 0.3s ease;" alt="cinema">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-5 order-md-1">
+                    <img src="<?= $hero[3][3] ?>" class="img-fluid rounded shadow-lg hover-zoom" style="width: 500px; height: 300px; object-fit: cover; transition: transform 0.3s ease;" alt="travel">
+                </div>
+                <div class="col-md-7 order-md-2">
+                    <center><h2 class="a"><b><i><?= $hero[3][1] ?></i></b></h2><br><br>
+                    <p><?= $hero[3][2] ?></p>
+                </div>
+            </div>
+            
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <center><h2 class="a"><b><i><?= $hero[4][1] ?></i></b></h2><br><br>
+                    <p><?= $hero[4][2] ?></p>
+                </div></center>
+                <div class="col-md-5">
+                    <img src="<?= $hero[4][3] ?>" class="img-fluid rounded shadow-lg hover-zoom" style="width: 500px; height: 300px; object-fit: cover; transition: transform 0.3s ease;" alt="cinema">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <center><!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/profile/alexa.png">
+                    <h2>Alexa Navarro</h2>
+                    <p>Founder & Creative Director</p>
+                    <p>Former travel vlogger and graphic designer from Cebu, Alexa turned her passion for exploring hidden gems into a business.</p>
+                </div><!-- /.col-lg-4 --></center>
+                <div class="col-lg-4">
+                    <center><!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/profile/jared.png" style="border: 1px solid gray;">
+                    <h2>Jared Santos</h2>
+                    <p>Technical Lead & WEB Developer</p>
+                    <p>A tech whiz from Davao with a degree in Computer Science, Jared codes and manages the backend of the tourist site.</p>
+                </div><!-- /.col-lg-4 --></center>
+                <div class="col-lg-4">
+                    <center><!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/profile/mika.png" style="border: 1px solid gray;">
+                    <h2>Mika Tan</h2>
+                    <p>Marketing Manager & Tour Curator</p>
+                    <p>A tourism graduate from Baguio, Mika handles partnerships with local tour guides, runs the newsletter, and writes blogs. </p>
+                </div><!-- /.col-lg-4 --></center> 
+    <?php include '../nav/footer.php'; ?>

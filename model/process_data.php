@@ -1,0 +1,140 @@
+	<?php
+	require 'config.php';
+	session_start();
+
+	if (isset($_GET['page']) && $_GET['page'] === 'contact' && isset($_POST['send_msg'])) {
+		$name = $_POST['name'];
+		$message = $_POST['mssg'];
+		$email = $_POST['email'];
+		$contact = $_POST['contact'];
+
+		$sql = "INSERT INTO contact_messages (name, message, email, contact) VALUES (?, ?, ?, ?)";
+		$stmt = mysqli_prepare($conn, $sql);
+		mysqli_stmt_bind_param($stmt, "ssss", $name, $message, $email, $contact);
+
+		if (mysqli_stmt_execute($stmt)) {
+			$_SESSION['success'] = "Message sent successfully!";
+		} else {
+			$_SESSION['error'] = "Failed to send message.";
+		}
+
+		header("Location: ../views/contact.php"); // redirect back to contact form page
+		exit();
+	}
+
+	// if admin update the carousel featured destination
+	if (isset($_POST['updateDestination'])) {
+		// Get values and set variables
+		$id = $_POST['id'];
+		$name = $_POST['name'];
+		$desc = $_POST['desc'];
+		$changeImageLink = $_POST['changeImageLink'];
+		$moreLink = $_POST['moreLink'];
+
+		// Flags
+		$imgLinkLoc = 0;
+		$imgLinkOnl = 0;
+		$imgLink = 0;
+		$moreLinkBtn = 0;
+
+		$set_img = "";
+		$set_more = "";
+
+		// Handle uploaded image (local file)
+		$changeImage = $_FILES['changeImage']['name'];
+		if (!empty($changeImage)) {
+			$imgLinkLoc = 1;
+
+			// Save to images folder
+			$targetDir = "../images/";
+			$targetFile = $targetDir . basename($changeImage);
+
+			// Move uploaded file to ../images/
+			if (move_uploaded_file($_FILES["changeImage"]["tmp_name"], $targetFile)) {
+				$set_img = ", cft_img = '$changeImage', cft_imgLink = '0'";
+			} else {
+				echo "<script>alert('Failed to upload local image.');</script>";
+				echo "<script>window.history.back();</script>";
+				exit();
+			}
+		}
+
+
+		// Handle online image link
+		if (!empty($changeImageLink)) {
+			$term = substr($changeImageLink, 0, 8);
+			if ($term == "https://") {
+				$imgLinkOnl = 1;
+				$imgLink = 1;
+				$set_img = ", cft_img = '$changeImageLink', cft_imgLink = '1'";
+			} else {
+				echo "<script>alert('Invalid online image link!\\r\\nLink must start with https://');</script>";
+				echo "<script>window.history.back();</script>";
+				exit();
+			}
+		}
+
+		// Prevent both uploads
+		if ($imgLinkLoc == 1 && $imgLinkOnl == 1) {
+			echo "<script>alert('Multiple image sources detected. Use only one: Upload or Link.');</script>";
+			echo "<script>window.history.back();</script>";
+			exit();
+		}
+
+		// Handle "More" link
+		if (!empty($moreLink)) {
+			$moreLinkBtn = 1;
+			$set_more = ", cft_more = '$moreLink', cft_moreLink = '1'";
+		}
+
+		// Final SQL Query
+		$sql = "UPDATE carousel_ft_tb
+			SET cft_name = '$name',
+				cft_desc = '$desc'
+				$set_img
+				$set_more,
+				cft_date = NOW()
+			WHERE cft_id = '$id'";
+
+		// Execute
+		$query = mysqli_query($conn, $sql);
+
+		if ($query) {
+			header('Location: home.php');
+			exit();
+		} else {
+			echo "Update failed: " . mysqli_error($conn);
+		}
+	}
+
+
+	//hero features destination
+	if (isset($_POST ['heroftBtn'])) {
+		// Get the data 
+		$id = $_POST['id'];
+		$title = $_POST['title'];
+		$desc = $_POST['desc'];
+		$img = $_POST['img'];
+	
+		// Preparatory values
+		$imgsql = "";
+		if (!empty($img)) {
+			$imgsql = ", hft_img = '$img'";
+		}
+	
+		// Prepare the SQL query
+		$sql = "UPDATE hero_ft_tb
+				SET hft_title = '$title',
+					hft_desc = '$desc',
+					hft_date = '$imgsql'
+				WHERE hft_id = '$id'";
+	
+		// Execute query
+		$query = mysqli_query($conn, $sql);
+	
+		// Redirect if successful
+		if ($query) {
+			header('Location: home.php');
+		}
+	}
+	

@@ -1,0 +1,370 @@
+<?php include '../nav/header.php';?>
+
+<link rel="stylesheet" href="../assets/dist/css/style.css">
+    <br><br>
+        <div class="row py-lg-5"> 
+            <div class="col-lg-6 col-md-8 mx-auto"> 
+                <h1 class="fw-light" style="text-align: center;">Services</h1> 
+                <p class="lead text-body-secondary" style="text-align: center;">Your Trusted Partner for Eastern Samar Tourist Destinations.</p> 
+            </div> 
+        </div>
+        <br><br>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"> 
+            <div class="col"> 
+                <div class="card shadow-sm"> 
+                    <!--carousel-->    
+                    <div id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel">     
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/canhugas/can1.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/canhugas/can2.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/canhugas/c3.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/canhugas/ca4.webp" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/canhugas/can5.webp" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                    </div>
+                    <div class="card-body"> 
+                        <center><p class="a">CANHUGAS NATURE PARK</p><br><br></center>
+                        <div class="d-flex justify-content-between align-items-center"> 
+                            <div class="btn-group"> 
+                                <p>2,500&#8364</p> 
+                            </div> 
+                            <button class="b" style="color: white;"><b>Avail Now!</b></button>
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="col"> 
+                <div class="card shadow-sm"> 
+                   <!--carousel-->    
+                   <div id="demo1" class="carousel slide carousel-fade" data-bs-ride="carousel">   
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/linaw/lin1.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/linaw/lin2.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/linaw/lin3.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/linaw/lin4.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/linaw/lin5.webp" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demo1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demo1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                    </div> <!--end of carousel-->
+                    <div class="card-body"> 
+                        <p class="a">LINAO CAVE</p> <br><br>
+                        <div class="d-flex justify-content-between align-items-center"> 
+                            <div class="btn-group"> 
+                                <p>1,500&#8364</p>
+                            </div> 
+                            <button class="b" style="color: white;"><b>Avail Now!</b></button>
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="col"> 
+                <div class="card shadow-sm"> 
+                    <!--carousel-->    
+                   <div id="demo2" class="carousel slide carousel-fade" data-bs-ride="carousel">   
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/divinubo/div1.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/divinubo/div2.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/divinubo/div3.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/divinubo/div4.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/divinubo/div5.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                    </div> <!--end of carousel-->
+                    <div class="card-body"> 
+                        <p class="a">DIVINUBO ISLAND</p> <br><br>
+                        <div class="d-flex justify-content-between align-items-center"> 
+                            <div class="btn-group"> 
+                                <p>1,800&#8364</p>
+                            </div> 
+                            <button class="b" style="color: white;"><b>Avail Now!</b></button> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="col"> 
+                <div class="card shadow-sm"> 
+                    <!--carousel-->    
+                   <div id="demo3" class="carousel slide carousel-fade" data-bs-ride="carousel">   
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/sulangan/s1.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/sulangan/s2.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/sulangan/s3.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/sulangan/s4.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/sulangan/s5.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demo3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demo3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                    </div> <!--end of carousel-->
+                    <div class="card-body"> 
+                        <p class="a">SULANGAN CHURCH</p> 
+                        <div class="d-flex justify-content-between align-items-center"> 
+                            <div class="btn-group"> 
+                               <p>1,000&#8364</p>
+                            </div> 
+                            <button class="b" style="color: white;"><b>Avail Now!</b></button> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="col"> 
+                <div class="card shadow-sm"> 
+                    <!--carousel-->    
+                   <div id="demo4" class="carousel slide carousel-fade" data-bs-ride="carousel">   
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/minasangay/min1.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/minasangay/min2.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/minasangay/min3.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/minasangay/min4.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/minasangay/min5.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demo4" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demo4" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                    </div> <!--end of carousel-->
+                    </svg> <div class="card-body"> 
+                        <p class="a">MINASANGAY ISLAND</p> 
+                        <div class="d-flex justify-content-between align-items-center"> 
+                            <div class="btn-group"> 
+                                <P>1,000&#8364</P>
+                            </div> 
+                            <button class="b" style="color: white;"><b>Avail Now!</b></button> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="col"> 
+                <div class="card shadow-sm"> 
+                     <!--carousel-->    
+                   <div id="demo5" class="carousel slide carousel-fade" data-bs-ride="carousel">   
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/sohoton/cave1.webp" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/sohoton/cave2.JPG" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/sohoton/cave3.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/sohoton/cave4.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/sohoton/cave6.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demo5" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demo5" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                    </div> <!--end of carousel-->
+                    <div class="card-body"> 
+                        <p class="a">SOHOTON CAVE</p> 
+                        <div class="d-flex justify-content-between align-items-center"> 
+                            <div class="btn-group"> 
+                               <p>2,000&#8364</p>
+                            </div> 
+                            <button class="b" style="color: white;"><b>Avail Now!</b></button> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="col"> 
+                <div class="card shadow-sm"> 
+                     <!--carousel-->    
+                   <div id="demo6" class="carousel slide carousel-fade" data-bs-ride="carousel">   
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/sanjuanico/san1.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/sanjuanico/san2.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/sanjuanico/san3.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/sanjuanico/san4.webp" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/sanjuanico/san5.avif" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demo6" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demo6" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                    </div> <!--end of carousel-->
+                    <div class="card-body"> 
+                        <p class="a">SAN JUANICO BRIDGE</p> 
+                        <div class="d-flex justify-content-between align-items-center"> 
+                            <div class="btn-group"> 
+                                <p>500&#8364</p>
+                            </div> 
+                            <button class="b" style="color: white;"><b>Avail Now!</b></button> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="col"> 
+                <div class="card shadow-sm"> 
+                    <!--carousel-->    
+                   <div id="demo7" class="carousel slide carousel-fade" data-bs-ride="carousel">   
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/ando/ando1.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/ando/ando2.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/ando/ando3.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/ando/ando4.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/ando/ando5.jpg" alt="" height="225px" class="d-block" style="width:100%">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demo7" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demo7" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                    </div> <!--end of carousel-->
+                    <div class="card-body"> 
+                        <p class="a">ANDO ISLAND</p> 
+                        <div class="d-flex justify-content-between align-items-center"> 
+                            <div class="btn-group"> 
+                                <p>3,000&#8364 </p>
+                            </div> 
+                            <button class="b" style="color: white;"><b>Avail Now!</b></button> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="col">
+                <div class="card shadow-sm">
+                    <!-- Carousel with fade animation -->
+                    <div id="demo8" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="../img/marabut/mar1.jpg" alt="" height="225px" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="../img/marabut/mar2.jpg" alt="" height="225px" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="../img/marabut/mar3.jpg" alt="" height="225px" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="../img/marabut/mar4.jpg" alt="" height="225px" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="../img/marabut/marabut.jpg" alt="" height="225px" class="d-block w-100">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo8" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo8" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    </div>
+
+                    <!-- Card Body (below carousel) -->
+                    <div class="card-body">
+                    <p class="a">MARABUT ROCK FORMATION</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <p>2,500&#8364;</p>
+                            </div>
+                            <button class="btn btn-primary btn-sm"><b>Avail Now!</b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>

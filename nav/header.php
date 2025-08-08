@@ -1,0 +1,103 @@
+<?php include '../model/db.php' ?>
+<?php
+	#--------------------------------------------------------------#
+	#-- Carousel Featured destination							 --#
+	#--------------------------------------------------------------#
+	//getl the carousel featured destination
+	$carousel_sql = "SELECT * FROM `carousel_ft_tb`";
+	$carousel_query = mysqli_query($conn, $carousel_sql);
+	$carousel = mysqli_fetch_all($carousel_query);
+	//print_r($carousel);
+	
+	#--------------------------------------------------------------#
+	#-- Hero Featured destination								 --#
+	#--------------------------------------------------------------#
+	//get hero featured destination sql
+	$hero_sql = "SELECT * FROM hero_ft_tb";
+	$hero_query = mysqli_query($conn, $hero_sql);
+	$hero = mysqli_fetch_all($hero_query);
+	//print_r($hero);
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EasternSamarTD</title>
+  <link rel="icon" type="image/x-icon" href="../img/logo.jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <link rel="stylesheet" href="../assets/dist/css/style.css">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> 
+        <div class="container-fluid"> 
+            <img src="../img/logo.jpg" alt="Profile" width="40" height="32" class="me-2">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button> 
+            <div class="collapse navbar-collapse" id="navbarCollapse"> 
+                <ul class="navbar-nav me-auto mb-2 mb-md-0"> 
+                    <li class="nav-item"> 
+                        <a class="nav-link active" aria-current="page" href="touristdestination.php">Home</a> 
+                    </li> 
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="Services.php">Services</a> 
+                    </li> 
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="contact.php">Contact</a> 
+                    </li> 
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="../model/login.php" data-bs-toggle="modal" data-bs-target="#myModal" style="float: right;">Login</a> 
+                    </li> 
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="Explore.php">Explore</a> 
+                    </li> 
+                </ul> 
+            </div> 
+        </div> 
+    </nav>
+<!-- Login Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form action="../model/login.php" method="post">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="p-4 border rounded-3 bg-light"
+						 style="background-image:url('../img/logo.jpg');
+								background-repeat: no-repeat;
+								background-position: center;
+								background-size: cover;">
+						<div class="form-floating mb-3">
+							<input type="text" class="form-control" name="username" id="username" placeholder="Username" required>
+							<label for="username">Username</label>
+						</div>
+						<div class="form-floating mb-3">
+							<input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+							<label for="password">Password</label>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-warning btn-sm" data-bs-dismiss="modal">Close</button>
+					<button type="submit" class="btn btn-primary btn-sm" name="login">Login</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<?php
+if (isset($_SESSION['error'])) {
+	echo "<script>alert('{$_SESSION['error']}');</script>";
+	unset($_SESSION['error']);
+}
+?>

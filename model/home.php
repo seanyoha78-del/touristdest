@@ -1,0 +1,270 @@
+<?php include '../nav/admin_header.php'; ?>
+				<br>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+					<h1 class="h2" style="margin-left: 30px;">Manage Home Page</h1>
+					<div class="btn-toolbar mb-2 mb-md-0">
+						<div class="btn-group mr-2">
+							<button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+							<button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+						</div>
+						<button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+							<span data-feather="calendar"></span>
+							This week
+						</button>
+					</div>
+				</div><br>
+				<div class="row">
+					<div class="col-md-6">
+						<h2 style="text-align: center;">Featured Carousel Destination</h2>
+						<div class="table-responsive">
+							<table id="table1" class="table table-striped table-md table-hover table-bordered">
+								<thead>
+									<tr align="center">
+										<th>No.</th>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									<?php $n = 0; foreach ($get_cft_query as $img): $n++ ?>
+										<tr>
+											<td align="center"><?= $n ?></td>
+											<td  style="
+													background-image: url(<?= $img['cft_imgLink'] == 0? '../images/'.$img['cft_imgLink']:$img['cft_img'] ?>);
+													background-size: cover;
+													background-position: center;
+													background-repeat: no-repeat;
+													"
+												>
+												<b style="text-shadow: 	-1px -1px 0 white,
+																		1px -1px 0 white,
+																		-1px  1px 0 white, 
+																		1px  1px 0 white;"
+													>
+													<?= $img['cft_name'] ?>
+												</b>
+											</td>
+											<td><p style="text-align:justify;"><?= $img['cft_desc'] ?></p></td>
+											<td align="center">
+												<button class="btn btn-primary btn-sm" 
+												   title="UPDATE FEATURE" 
+												   data-toggle="modal"
+												   data-target="#update<?= $img['cft_id'] ?>"
+												   >
+													<span data-feather="edit" title="UPDATE FEATURE">Edit</span>
+												</button>
+											</td>
+										</tr>
+										<div class="modal fade" id="update<?= $img['cft_id'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+											<div class="modal-dialog"style="max-width: 700px;">
+												<div class="modal-content">
+													<form action="../model/process_data.php" method="post" enctype="multipart/form-data">
+														<div class="modal-header">
+															<h5 class="modal-title" id="exampleModalLabel">Update Carousel Featured</h5>
+															<button type="button" class="btn btn-sm" data-dismiss="modal" style="color:red;"><span data-feather="x"></span></button>
+														</div>
+														<div class="modal-body">
+															<div>
+																<div class="p-4 p-md-5 border rounded-3 bg-light">
+																	<div class="form-floating mb-3">
+																		<div class="row">
+																			<div class="col-sm-2" align="right">
+																				<b>Image:</b>
+																			</div>
+																			<div class="col-sm-10" align="center">
+																				<img src="<?= $img['cft_imgLink'] == 0? '../images/'.$img['cft_img']:$img['cft_img'] ?>" 
+																					 width="100%"
+																				/>
+																			</div>
+																			<div class="col-sm-2" align="right">
+																				<b>Name:</b>
+																			</div>
+																			<div class="col-sm-10">
+																				<input class="form-control"
+																					   type="text" 
+																					   name="name" 
+																					   value="<?= $img['cft_name'] ?>"
+																					   required
+																					/>
+																			</div>
+																			<div class="col-sm-2" align="right">
+																				<b>Description:</b>
+																			</div>
+																			<div class="col-sm-10">
+																				<textarea class="form-control auto-resize"
+																						  type="text" 
+																						  name="desc"
+																						  oninput="autoResizeTextarea(this)"
+																						  required
+																					><?= $img['cft_desc'] ?></textarea>
+																			</div>
+																		</div>
+                                                                        <div class="row">
+																			<hr><label><small style="color:red;">Note:</small> Fill-in the form below to change/update the Image and/or link for "More" button.</label><hr>
+                                                                        </div>
+																		<div class="row">
+																			<div class="col-sm-3" align="right">
+																				<b>Online Image Link:</b>
+																			</div>
+																			<div class="col-sm-9">
+																				<input class="form-control"
+																					   type="text" 
+																					   name="changeImageLink"
+																					/>
+																			</div>
+																			<div class="col-sm-3" align="right">
+																				<b>Choose Local Image:</b>
+																			</div>
+																			<div class="col-sm-9">
+																				<input class="form-control"
+																					   type="file" 
+																					   name="changeImage"
+																					/>
+																			</div>
+																			<div class="col-sm-3" align="right">
+																				<b>More Button Link:</b>
+																			</div>
+																			<div class="col-sm-9">
+																				<input class="form-control"
+																					   type="text" 
+																					   name="moreLink" 
+																					/>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="modal-footer">
+															<input type="hidden" name="id" value="<?= $img['cft_id'] ?>">
+															<button type="submit" class="btn btn-success btn-sm" name="updateDestination"><span data-feather="save">Save</span></button>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									<?php endforeach ?>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<h2 style="text-align: center;">Featured Hero Destination</h2>
+						<div class="table-responsive">
+							<table id="table2" class="table table-striped table-md table-hover table-bordered">
+								<thead>
+									<tr align="center">
+										<th>No.</th>
+										<th>Title</th>
+										<th>Description</th>
+										<th>Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									<?php $n = 0; foreach ($get_hft_query as $hft): $n++; ?>
+										<tr>
+											<td><?= $n ?></td>
+											<td style="
+													background-image: url(<?= $hft['hft_img']  ?>);
+													background-size: cover;
+													background-position: center;
+													background-repeat: no-repeat;
+													"
+												>
+												<b style="text-shadow: 	-1px -1px 0 white,
+																		1px -1px 0 white,
+																		-1px  1px 0 white, 
+																		1px  1px 0 white;"
+													>
+													<?= $hft['hft_title']."</br><small>"?>
+												</b>
+											</td>
+											<td style="text-align: justify;" ><?= $hft['hft_desc'] ?></td>
+											<td align="center">
+												<button class="btn btn-primary btn-sm" 
+												   title="UPDATE HERO FEATURE" 
+												   data-toggle="modal"
+												   data-target="#update_hft_<?= $hft['hft_id'] ?>"
+												   >
+													<span data-feather="edit" title="UPDATE HERO FEATURE">Edit</span>
+												</button>
+											</td>
+										</tr>
+										<div class="modal fade" id="update_hft_<?= $hft['hft_id'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+											<div class="modal-dialog" style="max-width:700px;">
+												<div class="modal-content">
+													<form action="process_data.php?page=home" method="post">
+														<div class="modal-header">
+															<h5 class="modal-title" id="exampleModalLabel">Update Hero Featured</h5>
+															<button type="button" class="btn btn-sm" data-dismiss="modal" style="color:red;"><span data-feather="x"></span></button>
+														</div>
+														<div class="modal-body">
+															<div>
+																<div class="p-4 p-md-5 border rounded-3 bg-light">
+																	<div class="form-floating mb-3">
+																		<div class="row">
+																			<div class="col-sm-2" align="right">
+																				<b>Image:</b>
+																			</div>
+																			<div class="col-sm-10" align="center">
+																				<img src="<?= $hft['hft_img'] ?>" 
+																					 width="100%"
+																				/>
+																			</div>
+																			<div class="col-sm-2" align="right">
+																				<b>Title:</b>
+																			</div>
+																			<div class="col-sm-10">
+																				<input class="form-control"
+																					   type="text" 
+																					   name="title" 
+																					   value="<?= $hft['hft_title'] ?>"
+																					   required
+																					/>
+																			</div>
+																			<div class="col-sm-2" align="right">
+																				<b>Description:</b>
+																			</div>
+																			<div class="col-sm-10">
+																				<textarea class="form-control auto-resize"
+																						  type="text" 
+																						  name="desc"
+																						  oninput="autoResizeTextarea(this)"
+																						  required
+																					><?= $hft['hft_desc'] ?></textarea>
+																			</div>
+																			<div class="col-sm-2" align="right">
+																				<b>Image Link:</b>
+																			</div>
+																			<div class="col-sm-10">
+																				<input class="form-control"
+																					   type="text" 
+																					   name="img"
+																					/>
+																			</div>
+																			<input type="hidden" value="<?= $hft['hft_id'] ?>" name="id" />
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-warning btn-sm" data-dismiss="modal"><span data-feather="trash">Close</span></button>
+															<button type="submit" class="btn btn-success btn-sm" name="heroftBtn"><span data-feather="save">Save</span></button>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									<?php endforeach ?>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

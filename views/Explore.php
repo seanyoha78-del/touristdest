@@ -1,0 +1,193 @@
+<?php include '../nav/header.php';?>
+    <link rel="stylesheet" href="../assets/dist/css/style.css">
+    <br><br>
+        <div class="row py-lg-5"> 
+            <div class="col-lg-6 col-md-8 mx-auto"> 
+                <h1 class="fw-light" style="text-align: center;">Explore More.</h1> 
+                <p class="lead text-body-secondary" style="text-align: center;">Explore more of the beautiful tourist spot in Eastern Samar</p> 
+                <p class="lead text-body-secondary" style="text-align: center;">Have Fun Exploring Eastern Samar!</p>
+            </div> 
+        </div>
+        <br><br>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"> 
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- Front Side -->
+                            <div class="flip-card-front">
+                            <img src="../img/canhugas/canhugas.jpg" alt="Thumbnail">
+                            </div>
+                            <!-- Back Side -->
+                            <div class="flip-card-back">
+                                <p>In the small town of Hernani, Eastern Samar, lies a nature park known for its big waves colliding with large rock formations. Canhugas Nature Park got its name from the local term “hugas”, which means wash. Back in the old days, fishermen used to wash their catch in its waters.</p>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://www.google.com/search?sca_esv=28fff17e3de8b0c6&sxsrf=AE3TifORrJp_BB2sufrTrSc7WIOEBCQgtw:1753326428805&q=canhugas+nature+park&udm=2&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIetxLMeWi1u_d0OMRvkClUbalBeyXa8ssyRd_VUj5FQB2aTtVSqS-8espAxkq1fZ3U7lGlT9cP6FXyGQngOv_CCADopsXkVDJjBiwGRjwY_8IoP05MChc5gdqniqdF5e_bpsKBqlzaGeWP5BVUULJoZB4HGtZlG5VVtvBSU1W5tnGlvR_1g&sa=X&ved=2ahUKEwimm9v3wdSOAxUTklYBHckuMbMQtKgLKAF6BAgOEAE&biw=1920&bih=991&dpr=1" target="_blank" style="color: white;">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- Front Side -->
+                            <div class="flip-card-front">
+                            <img src="../img/linaw/linao.jpg" alt="Thumbnail">
+                            </div>
+                            <!-- Back Side -->
+                            <div class="flip-card-back">
+                                <p>Samar Island, known as the “Caving Capital of the Philippines,” is home to Linao Cave, one of the most underrated caves in the Philippines. Nestled in Guiuan, Eastern Samar, it got its name from the Waray-waray term “linaw,” which means clear. This majestic cave is a natural pool with cold and clear waters.</p>
+                                <a class="btn btn-sm btn-outline-secondary" href="" target="_blank" style="color: white;">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- Front Side -->
+                            <div class="flip-card-front">
+                            <img src="../img/divinubo/divinubo.jpg" alt="Thumbnail">
+                            </div>
+                            <!-- Back Side -->
+                            <div class="flip-card-back">
+                                <p>Divinubo Island, another island hopping destination in the Philippines, is located in Borongan City, Eastern Samar. Aside from its white-sand beaches, it has a rustic lighthouse where you can get a panoramic view of Eastern Samar and caves perfect for spelunking. </p>
+                                <a class="btn btn-sm btn-outline-secondary" href="" target="_blank" style="color: white;">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- Front Side -->
+                            <div class="flip-card-front">
+                            <img src="../img/sulangan/sulangan.jpg" alt="Thumbnail">
+                            </div>
+                            <!-- Back Side -->
+                            <div class="flip-card-back">
+                                <p>St. Anthony of Padua Church, locally known as Sulangan Church, is a Diocesan church in Guiuan, Eastern Samar. It is well-known among both residents and pilgrims due to its miraculous stories. The church can be found in the barangay of Sulangan, which is surrounded by white-sand beaches and clear blue waters. </p>
+                                <a class="btn btn-sm btn-outline-secondary" href="" target="_blank" style="color: white;">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- Front Side -->
+                            <div class="flip-card-front">
+                            <img src="../img/ando/ando.jpg" alt="Thumbnail">
+                            </div>
+                            <!-- Back Side -->
+                            <div class="flip-card-back">
+                                <p>Ando Island is one of the two main islands in Borongan City, Eastern Samar. Locally known as “puro halaba”, which means long island, it has many white-sand beaches with aquamarine waters perfect for swimming and snorkeling, shallow caves perfect for novices in spelunking, and coconut trees surrounding the island. It is one of the most beautiful islands in the Philippines.</p>
+                                <a class="btn btn-sm btn-outline-secondary" href="" target="_blank" style="color: white;">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- Front Side -->
+                            <div class="flip-card-front">
+                            <img src="../img/minasangay/minasangay.jpg" alt="Thumbnail">
+                            </div>
+                            <!-- Back Side -->
+                            <div class="flip-card-back">
+                                <p>Minasangay Island Marine Ecological Park and Resort is an ecological mangrove park in Balangkayan, located 25km away from the city of Borongan in Eastern Samar. The extensive lengths of beaches that are bordered by mangroves make it one of the best tourist spots in Visayas. </p>
+                                <a class="btn btn-sm btn-outline-secondary" href="" target="_blank" style="color: white;">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- Front Side -->
+                            <div class="flip-card-front">
+                            <img src="../img/sohoton/sohotan.JPG" alt="Thumbnail">
+                            </div>
+                            <!-- Back Side -->
+                            <div class="flip-card-back">
+                                <p>A natural wonder located in Basey, Samar, the Sohoton Natural Bridge National Park is a must-visit for nature enthusiasts. Known for its enchanting limestone formations, a vast network of caves, and a natural stone bridge that connects two lush mountains, this park offers an unforgettable adventure.</p>
+                                <a class="btn btn-sm btn-outline-secondary" href="" target="_blank" style="color: white;">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- Front Side -->
+                            <div class="flip-card-front">
+                            <img src="../img/sanjuanico/san.webp" alt="Thumbnail">
+                            </div>
+                            <!-- Back Side -->
+                            <div class="flip-card-back">
+                                <p>Connecting the islands of Samar and Leyte, the San Juanico Bridge is the longest bridge in the Philippines, stretching over 2 kilometres across the San Juanico Strait. The bridge offers a breathtaking view of the surrounding islands and waters and is a popular spot for photography and sightseeing. You can walk or bike across the bridge to enjoy the scenic beauty and capture panoramic shots of the sea and islands below.</p>
+                                <a class="btn btn-sm btn-outline-secondary" href="" target="_blank" style="color: white;">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- Front Side -->
+                            <div class="flip-card-front">
+                            <img src="../img/marabut/marabut.jpg" alt="Thumbnail">
+                            </div>
+                            <!-- Back Side -->
+                            <div class="flip-card-back">
+                                <p>On the western coast of Samar, near Marabut town, lies a series of towering rock formations jutting out of the sea. These limestone pillars, sculpted by the elements over millions of years, create a dramatic seascape that is perfect for photography and exploration.</p>
+                                <a class="btn btn-sm btn-outline-secondary" href="" target="_blank" style="color: white;">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <hr class="featurette-divider">
+
+        <div class="row">
+            <div class="col-lg-4">
+                <center><!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/profile/alexa.png">
+                <h2>Alexa Navarro</h2>
+                <p>Founder & Creative Director</p>
+                <p>Former travel vlogger and graphic designer from Cebu, Alexa turned her passion for exploring hidden gems into a business.</p>
+            </div><!-- /.col-lg-4 --></center>
+            <div class="col-lg-4">
+                <center><!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/profile/jared.png" style="border: 1px solid gray;">
+                <h2>Jared Santos</h2>
+                <p>Technical Lead & WEB Developer</p>
+                <p>A tech whiz from Davao with a degree in Computer Science, Jared codes and manages the backend of the tourist site.</p>
+            </div><!-- /.col-lg-4 --></center>
+            <div class="col-lg-4">
+                <center><!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="../img/profile/mika.png" style="border: 1px solid gray;">
+                <h2>Mika Tan</h2>
+                <p>Marketing Manager & Tour Curator</p>
+                <p>A tourism graduate from Baguio, Mika handles partnerships with local tour guides, runs the newsletter, and writes blogs. </p>
+            </div><!-- /.col-lg-4 --></center>
+<?php include '../nav/footer.php'; ?>

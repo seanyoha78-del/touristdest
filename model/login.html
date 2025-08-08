@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'config.php'; // Adjust the path if needed
+require 'config.html'; // Adjust the path if needed
 
 if (isset($_POST['login'])) {
 	$username = $_POST['username'];
@@ -24,7 +24,7 @@ if (isset($_POST['login'])) {
 		}
 	} else {
 		$_SESSION['error'] = "Username not found.";
-		header("Location: login.php"); // Redirect back to login
+		header("Location: login.html"); // Redirect back to login
 		exit();
 	}
 }

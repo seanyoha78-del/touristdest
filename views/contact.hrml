@@ -1,4 +1,4 @@
-<?php include '../nav/header.php';?>
+<link rel="stylesheet" href="../nav/header.html">
 <link rel="stylesheet" href="../assets/dist/css/style.css">
 
 <div class="container col-xl-10 col-xxl-8 px-4 py-5">
